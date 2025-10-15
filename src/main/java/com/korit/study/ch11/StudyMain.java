@@ -1,0 +1,48 @@
+package com.korit.study.ch11;
+
+public class StudyMain {
+    public static void main(String[] args) {
+
+
+//                과목명:java 기초
+//                담당 선생님 이름: 김준일
+//                담당 선생님 나이: 32
+//                학생1 id: 20250001
+//                학생1 이름: 박재현
+//                학생1 나이: 24
+//                학생2 id:20250002
+//                학생2 이름: 고대한
+//                학생2 나이: 19
+//                학생3 id: 20250003
+//                학생3 이름: 양재원
+//                학생3 나이: 27
+//                스터디 객체 생성하시오.
+        Teacher teacher = new Teacher("김준일", 32);
+        Subject subject= new Subject("java 기초", teacher);
+
+        Student student1 = new Student(20250001, "박재현", 24);
+        Student student2 = new Student(20250002, "고대한", 19);
+        Student student3 = new Student(20250003, "양재원", 27);
+
+        Student[] students = new Student[] {student1, student2, student3};
+
+
+        Study study = new Study(subject, students);
+
+        StudyAPrintService studyPrintService = new StudyAPrintService();
+        studyPrintService.printInfoAll(study);
+
+        System.out.println("=======================");
+        System.out.println(study.subject);
+        System.out.println("=======================");
+        System.out.println(study.subject.teacher);
+        System.out.println("=======================");
+        System.out.println(study.students[0]);
+
+
+
+
+
+
+    }
+}
