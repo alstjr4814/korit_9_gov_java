@@ -1,17 +1,47 @@
 package com.korit.study.ch22;
 
-import java.util.Objects;
+import com.korit.study.ch22.dto.SignupDto;
+import com.korit.study.ch22.service.SignupService;
+
+import java.util.Scanner;
 
 public class SignupMain {
     public static void main(String[] args) {
-        String prevPassword = "test1234";
-        String currentPassword = "test1234";
-        int prevPasswordHashcode = Objects.hash(prevPassword);
-        int currentPasswordHashcode = Objects.hash(currentPassword);
-        int encodedPassword = prevPasswordHashcode * 10;
-        System.out.println(prevPasswordHashcode);
-        System.out.println(currentPasswordHashcode);
-        System.out.println(encodedPassword);
-        System.out.println(encodedPassword / 10);
+        SignupService signupService = SignupService.getInstance();
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("[회원가입, 로그인]");
+            System.out.println("1. 회원가입");
+            System.out.println("2. 로그인");
+            System.out.println("3. 가입된 회원 전체 조회");
+            System.out.println("q. 종료");
+            System.out.print("선택 >> ");
+            String selectedMenu = scanner.nextLine();
+
+            if ("q".equalsIgnoreCase(selectedMenu)) {
+                System.out.println("프로그램 종료 중...");
+                break;
+            } else if ("1".equals(selectedMenu)) {
+                System.out.println("[ 회원가입 ]");
+                SignupDto signupDto = new SignupDto();
+                System.out.print("사용자이름: ");
+                signupDto.setUsername(scanner.nextLine());
+                System.out.print("비밀번호: ");
+                signupDto.setPassword(scanner.nextLine());
+                System.out.print("비밀번호확인: ");
+                signupDto.setConfirmPassword(scanner.nextLine());
+
+            } else if ("2".equals(selectedMenu)) {
+                System.out.println("[ 로그인 ]");
+                System.out.print("사용자이름: ");
+                System.out.print("비밀번호: ");
+
+            } else if ("3".equals(selectedMenu)) {
+                System.out.println("[ 가입된 회원 전체 조회 ]");
+            }
+        }
+
+        System.out.println("프로그램 종료 완료");
     }
 }

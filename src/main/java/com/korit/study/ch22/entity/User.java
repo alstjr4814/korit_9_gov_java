@@ -1,4 +1,4 @@
-package com.korit.study.ch22;
+package com.korit.study.ch22.entity;
 
 public class User {
     private int id;
@@ -9,6 +9,18 @@ public class User {
         this.id = id;
         this.username = username;
         this.password = password;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     @Override
