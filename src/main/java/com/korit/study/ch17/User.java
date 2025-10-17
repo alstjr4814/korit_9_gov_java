@@ -1,4 +1,4 @@
-package com.korit.study.ch17.ch17;
+package com.korit.study.ch17;
 
 import java.util.Arrays;
 
