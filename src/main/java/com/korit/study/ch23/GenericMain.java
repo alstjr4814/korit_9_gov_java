@@ -21,6 +21,8 @@ public class GenericMain {
         Generic<String, Integer> e = new Generic<String, Integer>("문자열 데이터", "", 3.14, 10);
         Generic<String, Integer> f = new Generic<>("문자열 데이터", "", 3.14, 10);
 
+        Object[] arr2 = new Object[1];
+
     }
 
 }
