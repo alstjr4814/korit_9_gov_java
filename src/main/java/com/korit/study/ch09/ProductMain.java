@@ -10,5 +10,7 @@ public class ProductMain {
         System.out.println("원가: " + p1.price);
         System.out.println("할인가: " + p1DiscountPrice);
         System.out.println("할인가: " + p1.discount());
+        Car car = new Car();
+
     }
 }
