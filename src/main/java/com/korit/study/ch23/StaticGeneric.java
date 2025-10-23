@@ -6,7 +6,7 @@ public class StaticGeneric {
         System.out.println(data);
     }
 
-    public static <T extends String> void print(T data) {
+    public static <R extends String> void print(R data) {
         System.out.println(data);
     }
 

@@ -1,8 +1,6 @@
 package com.korit.study.ch24;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class CollectionMain {
     public static void main(String[] args) {
@@ -69,6 +67,8 @@ public class CollectionMain {
         linkedList.add("40");
         linkedList.indexOf("30");
 
+        // Set(집합)
+        Set<String> strSet = new HashSet<>();
 
 
 

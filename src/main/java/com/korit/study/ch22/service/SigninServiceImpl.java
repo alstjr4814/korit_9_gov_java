@@ -21,7 +21,7 @@ public class SigninServiceImpl implements SigninService {
 
     public static SigninServiceImpl getInstance() {
         if (Objects.isNull(instance)) {
-            instance = new SigninServiceImpl(UserRepositoryImpl.getInstance());
+            instance = new SigninServiceImpl(UserRepositoryImpl2.getInstance());
         }
         return instance;
     }
