@@ -86,18 +86,18 @@ public class BoardMain {
         ((ArrayList<HashMap<String, String>>) boardMap1.get("comments")).get(1).put("content", "댓글 내용2");
 
         HashMap<String, Object> boardMap2 = new HashMap<String, Object>();
-        boardMap1.put("title", "게시판 제목2");
-        boardMap1.put("writer", new HashMap<String, Object>());
-        ((HashMap<String, Object>) boardMap1.get("writer")).put("name", "김준사");
-        ((HashMap<String, Object>) boardMap1.get("writer")).put("age", 30);
-        boardMap1.put("content", "게시판 내용2");
-        boardMap1.put("comments", new ArrayList<HashMap<String, String>>());
-        ((ArrayList<HashMap<String, String>>) boardMap1.get("comments")).add(new HashMap<String, String>());
-        ((ArrayList<HashMap<String, String>>) boardMap1.get("comments")).add(new HashMap<String, String>());
-        ((ArrayList<HashMap<String, String>>) boardMap1.get("comments")).get(0).put("writer", "김준오");
-        ((ArrayList<HashMap<String, String>>) boardMap1.get("comments")).get(0).put("content", "댓글 내용1");
-        ((ArrayList<HashMap<String, String>>) boardMap1.get("comments")).get(1).put("writer", "김준육");
-        ((ArrayList<HashMap<String, String>>) boardMap1.get("comments")).get(1).put("content", "댓글 내용2");
+        boardMap2.put("title", "게시판 제목2");
+        boardMap2.put("writer", new HashMap<String, Object>());
+        ((HashMap<String, Object>) boardMap2.get("writer")).put("name", "김준사");
+        ((HashMap<String, Object>) boardMap2.get("writer")).put("age", 30);
+        boardMap2.put("content", "게시판 내용2");
+        boardMap2.put("comments", new ArrayList<HashMap<String, String>>());
+        ((ArrayList<HashMap<String, String>>) boardMap2.get("comments")).add(new HashMap<String, String>());
+        ((ArrayList<HashMap<String, String>>) boardMap2.get("comments")).add(new HashMap<String, String>());
+        ((ArrayList<HashMap<String, String>>) boardMap2.get("comments")).get(0).put("writer", "김준오");
+        ((ArrayList<HashMap<String, String>>) boardMap2.get("comments")).get(0).put("content", "댓글 내용1");
+        ((ArrayList<HashMap<String, String>>) boardMap2.get("comments")).get(1).put("writer", "김준육");
+        ((ArrayList<HashMap<String, String>>) boardMap2.get("comments")).get(1).put("content", "댓글 내용2");
 
         ArrayList<HashMap<String, Object>> boardList = new ArrayList<HashMap<String, Object>>();
         boardList.add(boardMap1);
