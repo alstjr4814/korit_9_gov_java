@@ -46,10 +46,13 @@ public class BoardMain {
          *      },
          * ]
          */
+        String title1 = "게시판 제목1";
 
-        HashMap<String, Object> m1 = new HashMap<String, Object>();
-        m1.put("name", "김준일");
-        m1.put("age", 32);
+        HashMap<String, Object> writer1 = new HashMap<String, Object>();
+        writer1.put("name", "김준일");
+        writer1.put("age", 32);
+
+        String content1 = "게시판 내용1";
 
         HashMap<String, String> m2 = new HashMap<String, String>();
         m2.put("writer", "김준이");
@@ -58,7 +61,18 @@ public class BoardMain {
         HashMap<String, String> m3 = new HashMap<String, String>();
         m3.put("writer", "김준삼");
         m3.put("content", "댓글 내용2");
-        
+
+        ArrayList<HashMap<String, String>> comments1 = new ArrayList<HashMap<String, String>>();
+        comments1.add(m2);
+        comments1.add(m3);
+
+        HashMap<String, Object> board1 = new HashMap<String, Object>();
+        board1.put("title", title1);
+        board1.put("writer", writer1);
+        board1.put("content", content1);
+        board1.put("comments", comments1);
+
+
         /// ////////////////////////////////////////////////////
 
         ArrayList<HashMap<String, String>> l1 = new ArrayList<HashMap<String, String>>();
@@ -68,6 +82,16 @@ public class BoardMain {
         l1.get(0).put("content", "댓글 내용1");
         l1.get(1).put("writer", "김준삼");
         l1.get(1).put("content", "댓글 내용2");
+
+        /// ////////////////////////////////////////////////////
+
+        ArrayList<Object> l2 = new ArrayList<Object>();
+        l2.add(new HashMap<String, String>());
+        l2.add(new HashMap<String, String>());
+        ((HashMap<String, String>) l2.get(0)).put("writer", "김준이");
+        ((HashMap<String, String>) l2.get(0)).put("content", "댓글 내용1");
+        ((HashMap<String, String>) l2.get(0)).put("writer", "김준삼");
+        ((HashMap<String, String>) l2.get(0)).put("content", "댓글 내용2");
         
         /// ////////////////////////////////////////////////////
 
