@@ -32,6 +32,5 @@ public class ImmutableCollection {
 
         System.out.println(iMap);
         System.out.println(boards);
-
     }
 }
