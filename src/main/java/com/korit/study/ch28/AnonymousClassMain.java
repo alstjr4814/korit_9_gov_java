@@ -14,7 +14,6 @@ public class AnonymousClassMain {
         AnonymousClass b = new AnonymousClass() {
             @Override
             public void fx1() {
-
                 System.out.println(num);
 //                num += 10;
                 num2.set(num2.get() + 10);
@@ -22,8 +21,11 @@ public class AnonymousClassMain {
 
             @Override
             public int fx2() {
-                return 0;
+                return num2.get() + 1000;
             }
         };
+
+        b.fx1();
+        b.fx2();
     }
 }

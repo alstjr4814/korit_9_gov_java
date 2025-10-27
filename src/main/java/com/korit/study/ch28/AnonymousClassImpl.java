@@ -4,7 +4,7 @@ public class AnonymousClassImpl implements AnonymousClass {
 
     @Override
     public void fx1() {
-        System.out.println(num);
+//        System.out.println(num);
     }
 
     @Override
