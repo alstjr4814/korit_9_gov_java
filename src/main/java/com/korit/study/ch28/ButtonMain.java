@@ -62,7 +62,10 @@ public class ButtonMain {
         mypageButton.click();
 
         Button shopButton = new Button();
-        shopButton.setClickListener(() -> System.out.println("상점으로 이동합니다."));
+        shopButton.setClickListener(() -> {
+            System.out.println("상점으로 이동합니다.");
+            System.out.println("명령 하나 더 추가");
+        });
         shopButton.click();
     }
 }
