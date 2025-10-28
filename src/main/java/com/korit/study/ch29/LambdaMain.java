@@ -12,7 +12,7 @@ package com.korit.study.ch29;
  *      중괄호와 return 키워드는 세트.
  */
 
-
+@FunctionalInterface
 interface LambdaStudy {
     int calc(int a, int b, int c);
 }
