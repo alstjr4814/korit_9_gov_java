@@ -10,5 +10,9 @@ public class InnerClassMain {
 
         User.UserPrinter2 userPrinter2 = new User.UserPrinter2(user.toString());
         userPrinter2.print();
+
+        User.UserPrinter userPrinter3 = user.new UserPrinter(user.toString()) {
+
+        };
     }
 }

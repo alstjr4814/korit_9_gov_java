@@ -36,6 +36,12 @@ public class User {
 
         public UserPrinter2(String printValue) {
             this.printValue = printValue;
+
+            class T {
+
+            }
+
+            new T();
         }
 
         public void print() {
