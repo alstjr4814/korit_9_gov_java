@@ -65,5 +65,7 @@ public class FileMain {
         } catch (IOException e) {
             System.out.println("FileReader 객체를 통해 데이터를 읽는데 실패하였습니다.");
         }
+
+
     }
 }
