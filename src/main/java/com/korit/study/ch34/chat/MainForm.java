@@ -2,6 +2,10 @@ package com.korit.study.ch34.chat;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 class MainPanel extends JPanel {
     private JPanel topPanel;
@@ -62,6 +66,18 @@ class MainPanel extends JPanel {
             sendButton = new JButton("전송");
             sendButton.setSize(80, 70);
             sendButton.setVisible(true);
+            sendButton.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    try {
+                        PrintWriter out = new PrintWriter(Main.socket.getOutputStream());
+                        out.println(messageField.getText());
+                        out.flush();
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                }
+            });
 
             add(messageField, BorderLayout.CENTER);
             add(sendButton, BorderLayout.EAST);

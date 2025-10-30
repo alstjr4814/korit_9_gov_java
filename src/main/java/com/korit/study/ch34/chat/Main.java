@@ -33,6 +33,7 @@ public class Main {
                     System.out.println(ip + ", " + port);
                     try {
                         socket = new Socket(ip, port);
+                        connectionDialog.dispose();
                         new MainForm();
                     } catch (IOException ex) {
                         System.out.println("서버 연결 실패");
