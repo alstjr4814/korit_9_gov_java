@@ -3,10 +3,12 @@ package com.korit.study.ch34.chat;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 class Client extends Thread {
     private Socket socket;
@@ -22,6 +24,14 @@ class Client extends Thread {
             while (true) {
                 String line = in.readLine();
                 System.out.println(line);
+
+                for (Client client : ChatServer.clients) {
+                    Socket clientSocket = client.socket;
+                    PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
+                    out.println(line);
+                    System.out.println("test!!");
+                    out.flush();
+                }
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -31,7 +41,7 @@ class Client extends Thread {
 }
 
 public class ChatServer {
-    public static List<Client> clients = new ArrayList<>();
+    public static Vector<Client> clients = new Vector<>();
 
     public static void main(String[] args) {
         final int SERVER_PORT = 5000;

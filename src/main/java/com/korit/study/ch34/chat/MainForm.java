@@ -4,7 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 class MainPanel extends JPanel {
@@ -41,14 +43,31 @@ class MainPanel extends JPanel {
 
     class CenterPanel extends JPanel {
         private JTextArea chatTextArea;
-
+        private JScrollPane jScrollPane;
         public CenterPanel(LayoutManager layout) {
             super(layout);
             chatTextArea = new JTextArea();
             chatTextArea.setEnabled(false);
             chatTextArea.setVisible(true);
-            add(chatTextArea, BorderLayout.CENTER);
+
+            jScrollPane = new JScrollPane(chatTextArea);
+            jScrollPane.setVisible(true);
+            add(jScrollPane, BorderLayout.CENTER);
             setVisible(true);
+
+            Thread messageReceiver = new Thread(() -> {
+                try {
+                    BufferedReader in = new BufferedReader(new InputStreamReader(Main.socket.getInputStream()));
+                    while (true) {
+                        String line = in.readLine();
+                        chatTextArea.append(line + "\n");
+                    }
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+
+            messageReceiver.start();
         }
 
     }
@@ -96,6 +115,7 @@ public class MainForm extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(600, 600);
         setVisible(true);
+
 
     }
 
