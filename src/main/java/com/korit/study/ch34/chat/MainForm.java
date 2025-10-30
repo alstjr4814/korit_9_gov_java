@@ -80,6 +80,7 @@ public class MainForm extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(600, 600);
         setVisible(true);
+
     }
 
 }
