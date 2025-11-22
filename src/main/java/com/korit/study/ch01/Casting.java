@@ -9,7 +9,7 @@ public class Casting {
         long n4 = n3;
         float n5 = n4;
         double n6 = n5;
-        double n7 = n6; //라라ㅏㄹ
+        double n7 = n6; //수정본
         System.out.println(n6);
 
 //      명시적 형변환(다운캐스팅)
