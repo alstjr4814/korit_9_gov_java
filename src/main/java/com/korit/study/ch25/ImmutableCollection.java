@@ -1,4 +1,4 @@
-package com.korit.study.ch25;
+package korit_9_gov_java.src.main.java.com.korit.study.ch25;
 
 import com.korit.study.ch24.Board;
 import com.korit.study.ch24.Comment;

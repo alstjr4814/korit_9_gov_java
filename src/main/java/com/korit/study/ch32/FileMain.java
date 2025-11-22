@@ -1,4 +1,4 @@
-package com.korit.study.ch32;
+package korit_9_gov_java.src.main.java.com.korit.study.ch32;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

@@ -1,7 +1,7 @@
-package com.korit.study.ch22.dto;
+package korit_9_gov_java.src.main.java.com.korit.study.ch22.dto;
 
-import com.korit.study.ch22.entity.User;
-import com.korit.study.ch22.util.PasswordEncoder;
+import korit_9_gov_java.src.main.java.com.korit.study.ch22.entity.User;
+import korit_9_gov_java.src.main.java.com.korit.study.ch22.util.PasswordEncoder;
 
 public class SignupDto {
     private String username;

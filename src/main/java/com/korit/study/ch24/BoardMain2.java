@@ -1,4 +1,4 @@
-package com.korit.study.ch24;
+package korit_9_gov_java.src.main.java.com.korit.study.ch24;
 
 import java.util.ArrayList;
 import java.util.List;

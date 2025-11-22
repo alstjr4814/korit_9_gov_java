@@ -1,4 +1,4 @@
-package com.korit.study.ch31;
+package korit_9_gov_java.src.main.java.com.korit.study.ch31;
 
 import java.util.Map;
 

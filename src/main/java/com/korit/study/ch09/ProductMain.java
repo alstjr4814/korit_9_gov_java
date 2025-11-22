@@ -1,4 +1,4 @@
-package com.korit.study.ch09;
+package korit_9_gov_java.src.main.java.com.korit.study.ch09;
 
 public class ProductMain {
     public static void main(String[] args) {

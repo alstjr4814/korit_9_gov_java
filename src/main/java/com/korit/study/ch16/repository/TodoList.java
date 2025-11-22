@@ -1,4 +1,4 @@
-package com.korit.study.ch16.repository;
+package korit_9_gov_java.src.main.java.com.korit.study.ch16.repository;
 
 import com.korit.study.ch16.entity.Todo;
 

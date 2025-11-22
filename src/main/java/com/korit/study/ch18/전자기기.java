@@ -1,4 +1,4 @@
-package com.korit.study.ch18;
+package korit_9_gov_java.src.main.java.com.korit.study.ch18;
 
 public abstract class 전자기기 implements 전원 {
     private int 전압;

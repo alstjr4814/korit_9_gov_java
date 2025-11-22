@@ -1,4 +1,4 @@
-package com.korit.study.ch34;
+package korit_9_gov_java.src.main.java.com.korit.study.ch34;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;

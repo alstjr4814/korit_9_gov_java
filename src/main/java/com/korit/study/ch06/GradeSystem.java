@@ -1,4 +1,4 @@
-package com.korit.study.ch06;
+package korit_9_gov_java.src.main.java.com.korit.study.ch06;
 
 public class GradeSystem {
     // 평균을 계산하는 함수 (정수 2개)

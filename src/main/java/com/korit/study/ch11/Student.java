@@ -1,4 +1,4 @@
-package com.korit.study.ch11;
+package korit_9_gov_java.src.main.java.com.korit.study.ch11;
 
 public class Student {
     int id;

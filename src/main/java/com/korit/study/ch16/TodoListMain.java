@@ -1,4 +1,4 @@
-package com.korit.study.ch16;
+package korit_9_gov_java.src.main.java.com.korit.study.ch16;
 
 import com.korit.study.ch16.repository.TodoList;
 import com.korit.study.ch16.repository.UserList;

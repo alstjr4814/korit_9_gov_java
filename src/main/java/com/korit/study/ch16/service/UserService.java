@@ -1,6 +1,6 @@
-package com.korit.study.ch16.service;
+package korit_9_gov_java.src.main.java.com.korit.study.ch16.service;
 
-import com.korit.study.ch16.repository.UserList;
+import korit_9_gov_java.src.main.java.com.korit.study.ch16.repository.UserList;
 import com.korit.study.ch16.dto.SigninDto;
 import com.korit.study.ch16.dto.SignupDto;
 import com.korit.study.ch16.entity.User;

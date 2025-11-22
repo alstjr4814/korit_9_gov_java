@@ -1,4 +1,4 @@
-package com.korit.study.ch23;
+package korit_9_gov_java.src.main.java.com.korit.study.ch23;
 
 public class NonGeneric {
     private Object data;

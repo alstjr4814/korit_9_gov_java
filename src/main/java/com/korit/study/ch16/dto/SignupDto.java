@@ -1,6 +1,6 @@
-package com.korit.study.ch16.dto;
+package korit_9_gov_java.src.main.java.com.korit.study.ch16.dto;
 
-import com.korit.study.ch16.entity.User;
+import korit_9_gov_java.src.main.java.com.korit.study.ch16.entity.User;
 
 public class SignupDto {
     private String username;

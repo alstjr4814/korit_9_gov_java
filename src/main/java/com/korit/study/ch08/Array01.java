@@ -1,4 +1,4 @@
-package com.korit.study.ch08;
+package korit_9_gov_java.src.main.java.com.korit.study.ch08;
 
 import javax.xml.parsers.SAXParser;
 import java.util.Random;

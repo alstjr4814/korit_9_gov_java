@@ -1,4 +1,4 @@
-package com.korit.study.ch22;
+package korit_9_gov_java.src.main.java.com.korit.study.ch22;
 
 import com.korit.study.ch22.dto.SigninDto;
 import com.korit.study.ch22.dto.SignupDto;

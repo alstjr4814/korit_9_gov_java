@@ -1,10 +1,10 @@
-package com.korit.study.ch22.service;
+package korit_9_gov_java.src.main.java.com.korit.study.ch22.service;
 
 import com.korit.study.ch22.dto.SignupDto;
 import com.korit.study.ch22.entity.User;
-import com.korit.study.ch22.repository.UserRepository;
-import com.korit.study.ch22.repository.UserRepositoryImpl;
-import com.korit.study.ch22.repository.UserRepositoryImpl2;
+import korit_9_gov_java.src.main.java.com.korit.study.ch22.repository.UserRepository;
+import korit_9_gov_java.src.main.java.com.korit.study.ch22.repository.UserRepositoryImpl;
+import korit_9_gov_java.src.main.java.com.korit.study.ch22.repository.UserRepositoryImpl2;
 
 import java.util.Objects;
 

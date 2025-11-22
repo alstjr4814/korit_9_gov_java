@@ -1,4 +1,4 @@
-package com.korit.study.ch02;
+package korit_9_gov_java.src.main.java.com.korit.study.ch02;
 
 public class Operator05 {
     public static void main(String[] args) {

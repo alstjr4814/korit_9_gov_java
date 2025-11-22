@@ -1,6 +1,6 @@
-package com.korit.study.ch16.service;
+package korit_9_gov_java.src.main.java.com.korit.study.ch16.service;
 
-import com.korit.study.ch16.repository.TodoList;
+import korit_9_gov_java.src.main.java.com.korit.study.ch16.repository.TodoList;
 import com.korit.study.ch16.dto.TodoRegisterDto;
 import com.korit.study.ch16.entity.Todo;
 import com.korit.study.ch16.entity.User;

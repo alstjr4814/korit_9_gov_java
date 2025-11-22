@@ -1,4 +1,4 @@
-package com.korit.study.ch29;
+package korit_9_gov_java.src.main.java.com.korit.study.ch29;
 
 /**
  * Lambda(람다) - 익명함수

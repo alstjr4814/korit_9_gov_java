@@ -1,11 +1,11 @@
-package com.korit.study.ch16.view;
+package korit_9_gov_java.src.main.java.com.korit.study.ch16.view;
 
 import com.korit.study.ch16.dto.SigninDto;
 import com.korit.study.ch16.dto.SignupDto;
 import com.korit.study.ch16.dto.TodoRegisterDto;
-import com.korit.study.ch16.entity.User;
-import com.korit.study.ch16.service.TodoService;
-import com.korit.study.ch16.service.UserService;
+import korit_9_gov_java.src.main.java.com.korit.study.ch16.entity.User;
+import korit_9_gov_java.src.main.java.com.korit.study.ch16.service.TodoService;
+import korit_9_gov_java.src.main.java.com.korit.study.ch16.service.UserService;
 
 import java.util.Scanner;
 

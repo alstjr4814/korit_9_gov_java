@@ -1,4 +1,4 @@
-package com.korit.study.ch10;
+package korit_9_gov_java.src.main.java.com.korit.study.ch10;
 
 
 class ConstructorStudy {

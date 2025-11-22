@@ -1,4 +1,4 @@
-package com.korit.study.ch22.util;
+package korit_9_gov_java.src.main.java.com.korit.study.ch22.util;
 
 import java.util.Objects;
 

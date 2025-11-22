@@ -1,4 +1,4 @@
-package com.korit.study.ch01;
+package korit_9_gov_java.src.main.java.com.korit.study.ch01;
 
 public class Casting {
     public static void main(String[] args) {
@@ -9,10 +9,11 @@ public class Casting {
         long n4 = n3;
         float n5 = n4;
         double n6 = n5;
+        double n7 = n6; //라라ㅏㄹ
         System.out.println(n6);
 
 //      명시적 형변환(다운캐스팅)
-        double n7 = 10.0;
+//        double n7 = 10.0;
         float n8 = (float) n7;
         long n9 = (long) n8;
         int n10 = (int) n9;

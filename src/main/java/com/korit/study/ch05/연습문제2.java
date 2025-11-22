@@ -1,4 +1,4 @@
-package com.korit.study.ch05;
+package korit_9_gov_java.src.main.java.com.korit.study.ch05;
 
 public class 연습문제2 {
     public static void main(String[] args) {

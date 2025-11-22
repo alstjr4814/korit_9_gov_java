@@ -1,4 +1,4 @@
-package com.korit.study.ch21;
+package korit_9_gov_java.src.main.java.com.korit.study.ch21;
 
 import java.util.Objects;
 

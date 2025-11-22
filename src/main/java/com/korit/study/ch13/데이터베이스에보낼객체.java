@@ -1,4 +1,4 @@
-package com.korit.study.ch13;
+package korit_9_gov_java.src.main.java.com.korit.study.ch13;
 
 public class 데이터베이스에보낼객체 {
     String username;

@@ -1,4 +1,4 @@
-package com.korit.study.ch04;
+package korit_9_gov_java.src.main.java.com.korit.study.ch04;
 
 public class Controller04 {
     public static void main(String[] args) {

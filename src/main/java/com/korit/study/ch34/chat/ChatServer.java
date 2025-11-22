@@ -1,4 +1,4 @@
-package com.korit.study.ch34.chat;
+package korit_9_gov_java.src.main.java.com.korit.study.ch34.chat;
 
 import java.io.BufferedReader;
 import java.io.IOException;

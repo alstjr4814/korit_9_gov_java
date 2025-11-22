@@ -1,4 +1,4 @@
-package com.korit.study.ch29;
+package korit_9_gov_java.src.main.java.com.korit.study.ch29;
 
 interface MathOperation {
     int operate(int a, int b);

@@ -1,4 +1,4 @@
-package com.korit.study.ch28;
+package korit_9_gov_java.src.main.java.com.korit.study.ch28;
 
 public class AnonymousClassImpl implements AnonymousClass {
 

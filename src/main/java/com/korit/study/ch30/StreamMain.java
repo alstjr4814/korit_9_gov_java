@@ -1,4 +1,4 @@
-package com.korit.study.ch30;
+package korit_9_gov_java.src.main.java.com.korit.study.ch30;
 
 import java.util.*;
 import java.util.function.Function;
